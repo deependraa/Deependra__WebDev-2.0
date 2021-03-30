@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="colorlist"></p>
+    
+     <!-- first we have to create a javascript part  -->
+      <script type="text/javascript">
+        // setting a empty variable which will loop every time
+        var colorshow = "" ;
+        // creating the list of colors
+        var colors = ["Red", "blue", "Yellow", "Green"];
+        // loppring through to get each color in the list 
+        for(var i= 0 ; i<colors.length;i++){
+            colorshow = colorshow + " " + colors[i];
+        }
+        // passing every element to the html
+        document.getElementById("colorlist").innerHTML = colorshow;
+        
+      </script>
+</body>
+</html>

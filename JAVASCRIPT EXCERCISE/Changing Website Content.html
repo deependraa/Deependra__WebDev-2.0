@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="change" >want to know my name</p>
+    <!-- button which will change the content in th paragraph -->
+    <button id="changeText" >Click yo know name</button>
+
+    <script type="text/javascript">
+    // first we will select the button by which we need to change the text
+        document.getElementById("changeText").onclick = function (){
+            // after getting the button we will get the text that is needed to change and will change it to the reqiured text
+            document.getElementById("change").innerHTML = "My name is Deependra singh"
+        }
+
+    </script>
+
+</body>
+</html>

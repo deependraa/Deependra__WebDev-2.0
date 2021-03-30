@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- The text which want to change  -->
+    <p id="simpleText">Want to change my font size</p>
+    <button id="changeSize">Click me to change the font size</button>
+
+    <script type="text/javascript">
+        // first we will select the button by which we need to change the text
+        document.getElementById("changeSize").onclick = function(){
+             // after getting the button we will get the text that is needed to change and will change the font size to 50 px
+            document.getElementById("simpleText").style.fontSize = "50px";
+        }
+
+    </script>
+</body>
+</html>

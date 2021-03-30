@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="count"></p>
+    
+     <!-- first we have to create a javascript part  -->
+      <script type="text/javascript">
+    //   making variable which will come in the inner html of p
+        var count = "" ;
+        // making the list to loop through in
+        var num = [0,1,2,3,4,5]
+        var i = 0;
+        // initiating while loop
+        while(i< 6){
+            count = count + "The count is " + num[i] +" " ;
+            i++
+        }
+        // sending the value of count to the html
+        document.getElementById("count").innerHTML = count ;
+
+      </script>
+</body>
+</html>
