@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/css" src="../jquery-ui-1.12.1/jquery-ui.css"></script>
+    <script src="../jquery-ui-1.12.1/jquery-ui.js"></script>
+
+    <style type="text/css">
+        #resizable{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+        <h1 id="draggable">Hello their</h1>
+        <div style="width: 400px;height: 400px; background-color: aquamarine;">
+            <span id="onlyinside">In the box</span>
+        </div>
+        <div id="resizable"></div>
+        <script type="text/javascript">
+            $( function() {
+                $( "#draggable" ).draggable({ axis: "y" });
+                $( "#onlyinside" ).draggable({ containment: "parent" });
+                $( "#resizable" ).resizable();
+            } );
+            </script>
+</body> 
+</html>

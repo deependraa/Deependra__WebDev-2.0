@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expressions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+        
+
+        <script type="text/javascript">
+            // for finding the exact same word which is case sensetive
+            var regex = /is/;
+            // To remove case sensitive in our sear we have to do like this
+            var regex = /is/i;
+            // now to find how many time a word or character came in the search
+            var regex = /is/g;
+            var string = "Regex is great it is so useful";
+
+            var result = string.match(regex);
+            alert(result);
+            
+        </script>
+</body>
+</html>
